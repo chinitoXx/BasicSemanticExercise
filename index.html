@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Semantic Layout Exercise</title>
-    <style>
-        .nav__link{
-            float:left;
-            margin-left:2%;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!--External Stylesheet-->
+    <style> 
+        .nav__link {
+            float: left;
+            margin-left: 2%;
         }
-    </style>
+    </style><!--EMBEDDED STYLES-->
 </head>
-<body style="padding:0;margin:0;text-align:center;">
+
+<body style="background-color:yellow;padding:0;margin:0;text-align:center;"> <!--INLINE STYLES-->
     <!--**************************HEADER SECTION*****************************************-->
     <header style="background-color:blue;padding:0;margin:0;">
         <h1>HEADER</h1>
@@ -27,25 +33,79 @@
     </header>
 
     <!--**************************Main SECTION*****************************************-->
+    <main style="background-color:pink;height:50%;">
+
+        <!----------------SECTION 1----------------->
+        <h2>MAIN CONTENT</h2>
+        <section style="background-color: pink;height: 50%;">
+
+            <!-- ASIDE -->
+            <aside style="background-color:red;height:100%; width:30%; float:right;">
+                <h3>ASIDE</h3>
+                <ul>
+                    <li>Unordered List item</li>
+                    <li>Unordered List item</li>
+                    <li>Unordered List item</li>
+                    <li>Unordered List item</li>
+                    <li>Unordered List item</li>
+                </ul>
+                <ol>
+                    <li>ordered List item</li>
+                    <li>ordered List item</li>
+                    <li>ordered List item</li>
+                    <li>ordered List item</li>
+                    <li>ordered List item</li>
+                </ol>
+
+                <dl style="text-align:left">
+                    <dt>Coffee</dt>
+                    <dd>Hot and Cold</dd>
+                    <dt>Milk Tea</dt>
+                    <dd>Cold and Sweet.</dd>
+                </dl>
+            </aside>
+            <!-- ARTICLE1  -->
+            <h3>SECTION 1</h3>
+            <article style="background-color:green; height: 50%;">
+                <h3>ARTICLE 1</h3>
+            </article>
+        </section>
+        <hr>
 
 
-    
-    <!----------------SECTION 1----------------->
+        <!----------------SECTION 2----------------->
+        <section style="background-color:gray;height: 50%; margin: 0 5%;">
+            <h3>SECTION 2</h3>
+            <!-- ARTICLE2 -->
+            <h3 id="article2">ARTICLE 2</h3>
+            <p>This is is just a random text just to show how the float property usually works.
+                Let's add more text to know how this will be working as we add more content to our site.
+            </p>
+        </section>
 
-    <!-- ARTICLE1  -->
-    <!-- ASIDE -->
+        <!----------------SECTION 3----------------->
+        <section style="background-color: orange; height: 25%;">
+            <h3>SECTION 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde assumenda explicabo ullam totam ipsa quasi enim quas reiciendis quia, voluptate, excepturi atque, fugiat labore beatae. Beatae autem voluptate aut voluptates.</p>
+            <P>hello</P>
+            <form action="#">
+                <input type="text">
+                <button type="Submit">Subscribe</button>
 
+            </form>
 
-    <!----------------SECTION 2----------------->
+        </section>
 
-    <!-- ARTICLE1  -->
+    </main>
 
-    <!----------------SECTION 2----------------->
 
 
 
     <!--**************************FOOTER SECTION*****************************************-->
-
+    <footer style="background-color: black; height: 20vh; color: white;">
+        <p style="padding-top:4%">&#169; Copyright 2023</p>
+    </footer>
 
 </body>
+
 </html>
